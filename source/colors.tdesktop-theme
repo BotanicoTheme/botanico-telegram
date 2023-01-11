@@ -1,15 +1,22 @@
-// COLORS
+// pallete
 
 black: #212121;
-blue: #587b7f;
 dark: #1e2019;
-green: #2d5435;
-gray: #c2cdd2;
-darkGreen: #394032;
-mutedGreen: #8dab7f;
-mutedGreenCC: #8dab7fcc;
+
 lightGreen: #cfee9e;
+
+green15: #889e7a;
+green30: #7c9671;
+green45: #6b8b66;
+green60: #597f5a;
+green75: #4a6d4f;
+green100: #394032;
+
+vanilla: #dad7cd;
+gray: #c2cdd2;
 white: #ffffff;
+
+blue: #587b7f;
 
 windowBg: black; // white: fallback for background
 windowFg: #f5f5f5; // black: fallback for text
@@ -20,9 +27,9 @@ windowSubTextFg: #82868a; // gray: fallback for additional text
 windowSubTextFgOver: #797b7f; // darker gray: fallback for additional text with mouse over
 windowBoldFg: #e9e8e8; // dark gray: fallback for bold text
 windowBoldFgOver: #e9e9e9; // dark gray: fallback for bold text with mouse over
-windowBgActive: mutedGreen; // bright blue: fallback for blue filled active areas
+windowBgActive: green15; // bright blue: fallback for blue filled active areas
 windowFgActive: #ffffff; // white: fallback for text on active areas
-windowActiveTextFg: #4be1c3; // online blue: fallback for active text like online status
+windowActiveTextFg: lightGreen; // online blue: fallback for active text like online status
 windowShadowFg: #000000; // black: fallback for shadow
 windowShadowFgFallback: windowBg; // gray: fallback for shadow without opacity
 
@@ -109,7 +116,7 @@ titleButtonCloseFgActiveOver: titleButtonCloseFgOver; // custom window title clo
 titleFg: #666666; // custom window title text when window is inactive (macOS only)
 titleFgActive: #808080; // custom window title text when window is active (macOS only)
 
-trayCounterBg: #f23c34; // tray icon counter background
+trayCounterBg: green75; // tray icon counter background
 trayCounterBgMute: #888888; // tray icon counter background if all unread messages are muted
 trayCounterFg: #ffffff; // tray icon counter text
 trayCounterBgMacInvert: #ffffff; // tray icon counter background when tray icon is pressed or when dark theme of macOS is used (macOS only)
@@ -132,7 +139,7 @@ contactsBgOver: #282e33; // contacts (and some other) box row background with mo
 contactsNameFg: boxTextFg; // contacts (and some other) box row name text
 contactsStatusFg: #808080; // contacts (and some other) box row additional text (like last seen stamp)
 contactsStatusFgOver: #808080; // contacts (and some other) box row additional text (like last seen stamp) with mouse over
-contactsStatusFgOnline: #55e1d3; // contacts (and some other) box row active additional text (like online status)
+contactsStatusFgOnline: lightGreen; // contacts (and some other) box row active additional text (like online status)
 photoCropFadeBg: layerBg; // avatar crop box fade background (when choosing a new photo in Settings or for a group)
 photoCropPointFg: #ffffff7f; // avatar crop box corner rectangles (when choosing a new photo in Settings or for a group)
 callArrowFg: #2bc7b8; // received phone call arrow (in calls list box)
@@ -153,34 +160,34 @@ dialogsMenuIconFg: menuIconFg; // main menu and lock telegram icon
 dialogsMenuIconFgOver: menuIconFgOver; // main menu and lock telegram icon with mouse over
 dialogsBg: black; // chat list background
 dialogsNameFg: gray; // chat list name text
-dialogsChatIconFg: blue; // chat list group or channel icon
+dialogsChatIconFg: vanilla; // chat list group or channel icon
 dialogsDateFg: #6d727c; // chat list date text
 dialogsTextFg: #8d939e; // chat list message text
 dialogsTextFgService: #ebebeb; // chat list group sender name text (or media message type text)
 dialogsDraftFg: #ec6657; // chat list draft label
-dialogsVerifiedIconBg: mutedGreen; // chat list verified icon background
+dialogsVerifiedIconBg: green15; // chat list verified icon background
 dialogsVerifiedIconFg: black; // chat list verified icon check
 dialogsSendingIconFg: #727272; // chat list sending message icon (clock)
-dialogsSentIconFg: mutedGreen; // chat list sent message tick / double tick icon
-dialogsUnreadBg: #05a091; // chat list unread badge background for not muted chat
-dialogsUnreadBgMuted: #495159; // chat list unread badge background for muted chat
-dialogsUnreadFg: #ffffff; // chat list unread badge text
+dialogsSentIconFg: green15; // chat list sent message tick / double tick icon
+dialogsUnreadBg: green15; // chat list unread badge background for not muted chat
+dialogsUnreadBgMuted: gray; // chat list unread badge background for muted chat
+dialogsUnreadFg: white; // chat list unread badge text
 dialogsOnlineBadgeFg: lightGreen; // chat list online status
-dialogsBgOver: darkGreen; // chat list background with mouse over
-dialogsNameFgOver: white; // chat list name text with mouse over
+dialogsBgOver: green100; // chat list background with mouse over
+dialogsNameFgOver: vanilla; // chat list name text with mouse over
 dialogsChatIconFgOver: dialogsNameFgOver; // chat list group or channel icon with mouse over
 dialogsDateFgOver: #6d727c; // chat list date text with mouse over
 dialogsTextFgOver: #a3a7ae; // chat list message text with mouse over
 dialogsTextFgServiceOver: #f0f0f0; // chat list group sender name text with mouse over
 dialogsDraftFgOver: dialogsDraftFg; // chat list draft label with mouse over
-dialogsVerifiedIconBgOver: #53edde; // chat list verified icon background with mouse over
+dialogsVerifiedIconBgOver: lightGreen; // chat list verified icon background with mouse over
 dialogsVerifiedIconFgOver: dialogsVerifiedIconFg; // chat list verified icon check with mouse over
 dialogsSendingIconFgOver: dialogsSendingIconFg; // chat list sending message icon (clock) with mouse over
 dialogsSentIconFgOver: lightGreen; // chat list sent message tick / double tick icon with mouse over
-dialogsUnreadBgOver: #009687; // chat list unread badge background for not muted chat with mouse over
+dialogsUnreadBgOver: green75; // chat list unread badge background for not muted chat with mouse over
 dialogsUnreadBgMutedOver: #555e67; // chat list unread badge background for muted chat with mouse over
 dialogsUnreadFgOver: dialogsUnreadFg; // chat list unread badge text with mouse over
-dialogsBgActive: mutedGreenCC; // chat list background for current (active) chat
+dialogsBgActive: green15; // chat list background for current (active) chat
 dialogsNameFgActive: black; // chat list name text for current (active) chat
 dialogsChatIconFgActive: dialogsNameFgActive; // chat list group or channel icon for current (active) chat
 dialogsDateFgActive: dark; // chat list date text for current (active) chat
@@ -193,17 +200,17 @@ dialogsSendingIconFgActive: #ffffff99; // chat list sending message icon (clock)
 dialogsSentIconFgActive: dialogsTextFgActive; // chat list sent message tick / double tick icon for current (active) chat
 dialogsUnreadBgActive: dialogsTextFgActive; // chat list unread badge background for not muted chat for current (active) chat
 dialogsUnreadBgMutedActive: dark; // chat list unread badge background for muted chat for current (active) chat
-dialogsUnreadFgActive: #039d8e; // chat list unread badge text for current (active) chat
+dialogsUnreadFgActive: white; // chat list unread badge text for current (active) chat
 dialogsOnlineBadgeFgActive: #ffffff; // chat list online status for current (active) chat
-dialogsRippleBg: mutedGreenCC; // 
-dialogsRippleBgActive: mutedGreen; // 
+dialogsRippleBg: green15; // 
+dialogsRippleBgActive: green15; // 
 dialogsForwardBg: dialogsBgActive; // forwarding panel background (when forwarding messages in the smallest window size)
 dialogsForwardFg: dialogsNameFgActive; // forwarding panel text (when forwarding messages in the smallest window size)
 
 searchedBarBg: #3a4047; // search results bar background (in chats list, contacts box..)
 searchedBarFg: #a8a8a8; // search results bar text (in chats list, contacts box..)
 
-topBarBg: #282e33; // top bar background (in chat view, media overview..)
+topBarBg: dark; // top bar background (in chat view, media overview..)
 
 emojiPanBg: windowBg; // emoji panel background
 emojiPanCategories: #20262b; // emoji panel categories background
@@ -216,9 +223,9 @@ historyTextInFg: white; // inbox message text
 historyTextInFgSelected: #ffffff; // inbox message selected text or text in a selected message
 historyTextOutFg: white; // outbox message text
 historyTextOutFgSelected: #ffffff; // outbox message selected text or text in a selected message
-historyLinkInFg: mutedGreen; // inbox message link
+historyLinkInFg: green15; // inbox message link
 historyLinkInFgSelected: #a7fff4; // inbox message link in a selected text or message
-historyLinkOutFg: mutedGreen; // outbox message link
+historyLinkOutFg: green15; // outbox message link
 historyLinkOutFgSelected: #a7fff4; // outbox message link in a selected text or message
 historyFileNameInFg: historyTextInFg; // inbox media filename text
 historyFileNameInFgSelected: #ffffff; // inbox media filename text in a selected message
@@ -286,7 +293,7 @@ msgOutBg: black; // outbox message background
 msgOutBgSelected: #009687; // outbox selected message background (and background of selected text in those messages)
 msgSelectOverlay: #35d4bf4c; // overlay which is filling the media parts of selected messages (like in selected photo message)
 msgStickerOverlay: #35d4bf7f; // overlay which is filling the selected sticker message
-msgInServiceFg: windowActiveTextFg; // inbox message information text (like information about a forwarded message original sender)
+msgInServiceFg: green15; // inbox message information text (like information about a forwarded message original sender)
 msgInServiceFgSelected: #ffffff; // inbox selected message information text (like information about a forwarded message original sender)
 msgOutServiceFg: #60e5cb; // outbox message information text (like information about a forwarded message original sender)
 msgOutServiceFgSelected: #ffffff; // outbox message information text (like information about a forwarded message original sender)
@@ -301,9 +308,9 @@ msgOutDateFgSelected: #ffffff; // outbox selected message time text
 msgServiceFg: windowFgActive; // service message text (like date dividers or service message about the group title being changed)
 msgServiceBg: #363c43c8; // service message background (like in a service message about group title being changed) (adjusted)
 msgServiceBgSelected: #009687; // service message selected text background (like in a service message about group title being changed) (adjusted)
-msgInReplyBarColor: mutedGreen; // inbox message reply outline
+msgInReplyBarColor: green15; // inbox message reply outline
 msgInReplyBarSelColor: #ffffff; // inbox selected message reply outline
-msgOutReplyBarColor: mutedGreen; // outbox message reply outline
+msgOutReplyBarColor: green15; // outbox message reply outline
 msgOutReplyBarSelColor: #ffffff; // outbox selected message reply outline
 msgImgReplyBarColor: msgServiceFg; // sticker message reply outline
 msgInMonoFg: #5aaba0; // inbox message monospace text (like a message sent with `test` text)
@@ -318,10 +325,10 @@ msgFileThumbLinkInFg: lightButtonFg; // inbox media file message with thumbnail 
 msgFileThumbLinkInFgSelected: lightButtonFgOver; // inbox selected media file message with thumbnail download / open with button text
 msgFileThumbLinkOutFg: #60e5cb; // outbox media file message with thumbnail download / open with button text
 msgFileThumbLinkOutFgSelected: #ffffff; // outbox selected media file message with thumbnail download / open with button text
-msgFileInBg: #50d4c3; // inbox audio file download circle background
+msgFileInBg: green15; // inbox audio file download circle background
 msgFileInBgOver: #48cfbd; // inbox audio file download circle background with mouse over
 msgFileInBgSelected: #ffffff; // inbox selected audio file download circle background
-msgFileOutBg: #11bfab; // outbox audio file download circle background
+msgFileOutBg: green15; // outbox audio file download circle background
 msgFileOutBgOver: #ffffff; // outbox audio file download circle background with mouse over
 msgFileOutBgSelected: #ffffff; // outbox selected audio file download circle background
 msgFile1Bg: #3fbbab; // blue shared links / files without image square thumbnail
@@ -355,13 +362,13 @@ historyFileThumbRadialFg: historyFileThumbIconFg; // file with thumbnail (or pho
 historyFileThumbRadialFgSelected: #ffffff; // selected file with thumbnail (or photo / video) radial download animation line
 historyVideoMessageProgressFg: historyFileThumbIconFg; // radial playback progress in round video messages
 
-msgWaveformInActive: mutedGreen; // inbox voice message active waveform lines (like played part of currently playing voice message)
+msgWaveformInActive: green15; // inbox voice message active waveform lines (like played part of currently playing voice message)
 msgWaveformInActiveSelected: #ffffff; // inbox selected voice message active waveform lines (like played part of currently playing voice message)
-msgWaveformInInactive: darkGreen; // inbox voice message inactive waveform lines (like upcoming part of currently playing voice message)
+msgWaveformInInactive: green100; // inbox voice message inactive waveform lines (like upcoming part of currently playing voice message)
 msgWaveformInInactiveSelected: #41d1c0; // inbox selected voice message inactive waveform lines (like upcoming part of currently playing voice message)
-msgWaveformOutActive: mutedGreen; // outbox voice message active waveform lines (like played part of currently playing voice message)
+msgWaveformOutActive: green15; // outbox voice message active waveform lines (like played part of currently playing voice message)
 msgWaveformOutActiveSelected: #ffffff; // outbox selected voice message active waveform lines (like played part of currently playing voice message)
-msgWaveformOutInactive: darkGreen; // outbox voice message inactive waveform lines (like upcoming part of currently playing voice message)
+msgWaveformOutInactive: green100; // outbox voice message inactive waveform lines (like upcoming part of currently playing voice message)
 msgWaveformOutInactiveSelected: #41d1c0; // outbox selected voice message inactive waveform lines (like upcoming part of currently playing voice message)
 
 msgBotKbOverBgAdd: #ffffff14; // this is painted over a bot inline keyboard button (which has msgServiceBg background) when mouse is over that button
@@ -419,6 +426,7 @@ notificationSampleTextFg: #d7d7d7; // custom notifications settings box small sa
 notificationSampleNameFg: #939393; // custom notifications settings box small sample name placeholder
 changePhoneSimcardFrom: notificationSampleTextFg; // change phone number box left simcard icon
 changePhoneSimcardTo: notificationSampleNameFg; // change phone number box right simcard and plane icons
+
 mainMenuBg: windowBg; // main menu background
 mainMenuCoverBg: #009687; // main menu top cover background
 mainMenuCoverFg: windowFgActive; // main menu top cover text
